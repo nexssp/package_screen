@@ -1,0 +1,7 @@
+name: Capture
+debug: true
+input:
+  - name: file
+    required: "file parameter is required."
+files:
+  - name: src/selectElement.au3

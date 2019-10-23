@@ -1,0 +1,4 @@
+name: VideoRecord
+debug: true
+files:
+  - name: src/desktopVideoRecord.py
