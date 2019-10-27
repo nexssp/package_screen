@@ -4,7 +4,7 @@
 ;~ Nexss PROGRAMMER 2.0.0 - AutoIt 3
 ;~ Default template for JSON Data
 #include <MsgBoxConstants.au3>
-#include "3rdPartyLibraries/JSON/json.au3"
+#include "../../../3rdPartyLibraries/JSON/json.au3"
 ;~ STDIN
 
 Local $NexssStdin
@@ -41,7 +41,7 @@ EndIf
 
 ; Capture selected area
 _ScreenCapture_Capture($fileName, $iX1, $iY1, $iX2, $iY2, False)
-Json_ObjPut($parsedJson, "image", $fileName)
+Json_ObjPut($parsedJson, "file", $fileName)
 
 $NexssStdout = Json_Encode($parsedJson)
 ConsoleWrite($NexssStdout)
