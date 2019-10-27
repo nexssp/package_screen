@@ -1,0 +1,8 @@
+name: NexssTools
+debug: true
+output:
+  - name: text
+data: null
+files:
+  - name: Screen/Capture #--file=1.png
+  - name: Input/OCR #--file=1.png
