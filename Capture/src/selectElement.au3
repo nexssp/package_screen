@@ -4,7 +4,7 @@
 ;~ Nexss PROGRAMMER 2.0.0 - AutoIt 3
 ;~ Default template for JSON Data
 #include <MsgBoxConstants.au3>
-#include "../../../3rdPartyLibraries/JSON/json.au3"
+#include "3rdPartyLibraries/JSON/json.au3"
 ;~ STDIN
 
 Local $NexssStdin

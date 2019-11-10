@@ -2,10 +2,21 @@
 
 Allows you to select region on screen and convert it to text (OCR).
 
-## To add new files please use command below. The templates list will be displayed.
+## Example of Plugin without source inside!
+
+This is example of module which uses only Nexss PROGRAMMER pakcages without extra code.
+
+```yml
+files:
+  - name: Screen/Capture #--file=1.png Can be with or without params!
+  - name: Input/OCR #--file=1.png
+```
+
+## Credits
+
+Please go to each module for details about technologies used accordingly:
 
 ```sh
-nexss file add myfile.php
-nexss f add test.pl
-nexss f a abc.ahk
+nexss Screen/Capture help
+nexss Input/OCR help
 ```
