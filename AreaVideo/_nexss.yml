@@ -1,0 +1,8 @@
+name: NexssTools
+debug: true
+output:
+  - name: text
+data: null
+files:
+  - name: Select/Area
+  - name: Screen/VideoRecord

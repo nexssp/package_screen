@@ -21,10 +21,10 @@ parsedJson = json.loads(NexssStdin)
 
 
 # Checked on Windows 10
-# Press q to quit
+# Press q to quit (if full screen recording - move mouse to the total rightq)
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
-# fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+# fourcc = cv2.VideoWriter_fourcc(*'XVID')
 
 filename = str(parsedJson["start"]) + '_test.avi'
 path = parsedJson["cwd"] + '/' + filename
@@ -58,16 +58,20 @@ if 'Y2' in parsedJson:
 # Video will be not written if the size of grab is different then writer size as below.
 vid = cv2.VideoWriter(path, fourcc, 25, (X2-X1, Y2-Y1))
 
+moved = False
+
 while(True):
     # bbox specifies specific region (bbox= x,y,width,height)
     img = ImageGrab.grab(bbox=(X1, Y1, X2, Y2))
     img_np = np.array(img)
-    frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2GRAY)
+    # frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2GRAY)
 
-    vid.write(img_np) 
+    vid.write(img_np)
 
     cv2.imshow("test", img_np)
-    cv2.moveWindow("test", X2, 0)
+    if(not moved or (cv2.waitKey(25) & 0xFF == ord('w'))):
+        cv2.moveWindow("test", X2, Y1)
+        moved = True
 
     if cv2.waitKey(25) & 0xFF == ord('q'):
         vid.release()
