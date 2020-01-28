@@ -1,4 +1,4 @@
-name: NexssTools
+name: AreaOCR
 debug: true
 output:
   - name: text
