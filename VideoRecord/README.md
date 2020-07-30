@@ -9,3 +9,11 @@ nexss Screen/VideoRecord # Full video record. To quit - move mouse to total righ
 nexss Screen/VideoRecord --X1=100 --Y1=200 --X2=700 --Y2=800 # this works great with Select/Area module.
 
 ```
+
+## .nexss
+
+There is also file videoRecord.nexss which is bascially script and you can run it by:
+
+```sh
+nexss videoRecord.nexss --X1=100 --Y1=200 --X2=700 --Y2=800
+```
