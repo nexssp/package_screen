@@ -1,6 +1,7 @@
 name: VideoRecord
 debug: true
 files:
+  - name: Output/Log "q to quit. If you are recording full screen, move mouse to the right, and then q." --_type=warn
   - name: src/desktopVideoRecord.py
 commands:
   - name: init

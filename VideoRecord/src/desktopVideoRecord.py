@@ -18,8 +18,8 @@ parsedJson = json.loads(NexssStdin)
 #     str(platform.python_version())
 
 # parsedJson["test"] = "test"
-
-
+sys.stderr.write(
+    "NEXSS/info: Press q to quit (if full screen recording - move mouse to the total right and q)\n")
 # Checked on Windows 10
 # Press q to quit (if full screen recording - move mouse to the total rightq)
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -56,7 +56,7 @@ if 'Y2' in parsedJson:
 # os.system("ffmpeg -r 1 -i img%01d.png -vcodec mpeg4 -y movie.mp4")
 
 # Video will be not written if the size of grab is different then writer size as below.
-vid = cv2.VideoWriter(path, fourcc, 25, (X2-X1, Y2-Y1))
+vid = cv2.VideoWriter(path, fourcc, 25, (X2 - X1, Y2 - Y1))
 
 moved = False
 
