@@ -18,8 +18,10 @@ parsedJson = json.loads(NexssStdin)
 #     str(platform.python_version())
 
 # parsedJson["test"] = "test"
+# Output messages are written through stderr: https://github.com/nexssp/cli/wiki/Nexss-Programmer-Cheat-sheet#messages-and-errors
 sys.stderr.write(
     "NEXSS/info: Press q to quit (if full screen recording - move mouse to the total right and q)\n")
+    
 # Checked on Windows 10
 # Press q to quit (if full screen recording - move mouse to the total rightq)
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
