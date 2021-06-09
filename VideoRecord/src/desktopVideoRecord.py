@@ -1,5 +1,4 @@
-# Nexss PROGRAMMER 2.0.0 - Python3
-# Default template for JSON Data
+# nexss-compiler: python37
 
 import tkinter as tk
 from moviepy.editor import VideoFileClip
@@ -21,7 +20,7 @@ parsedJson = json.loads(NexssStdin)
 # Output messages are written through stderr: https://github.com/nexssp/cli/wiki/Nexss-Programmer-Cheat-sheet#messages-and-errors
 sys.stderr.write(
     "NEXSS/info: Press q to quit (if full screen recording - move mouse to the total right and q)\n")
-    
+
 # Checked on Windows 10
 # Press q to quit (if full screen recording - move mouse to the total rightq)
 # fourcc = cv2.VideoWriter_fourcc(*'XVID')
