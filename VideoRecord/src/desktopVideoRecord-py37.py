@@ -1,3 +1,5 @@
+# nexss-compiler: python37
+
 import tkinter as tk
 from moviepy.editor import VideoFileClip
 import cv2
